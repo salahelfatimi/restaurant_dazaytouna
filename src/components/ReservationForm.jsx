@@ -79,7 +79,7 @@ export default function ReservationForm() {
 
     return (
         <div className=''>
-            <div className="bg-primary p-10">
+            <div className="bg-primary p-10 bg-[url(/img/bg.svg)] bg-cover ">
                 <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center">
                     <h2 className="text-2xl lg:text-5xl font-semibold uppercase text-white text-center mb-6 font-serif">Réserver une table</h2>
                     <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-4 px-10 shadow-2xl bg-white py-10">

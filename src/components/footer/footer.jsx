@@ -11,7 +11,7 @@ export default function Footer(){
                 <p className={`select-none flex  flex-col lg:flex-row gap-1   items-center font-medium capitalize text-center lg:text-start text-white `}>
                     Copyright &copy; {new Date().getFullYear()} . Touts les droits sont réservés 
                     <span className=" text-primary   ">
-                        Domaine Zaytouna
+                        Restaurant Zaytouna
                     </span>
                 </p>
                 <div className="flex gap-6">
