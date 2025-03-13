@@ -7,6 +7,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import zaytouna from "@/data/zaytouna";
 import ReservationForm from "@/components/ReservationForm";
+import Link from "next/link";
 
 const montserratAlternates = Montserrat_Alternates({
   subsets: ['latin'],
@@ -33,7 +34,7 @@ export default function Home() {
               <div className=" absolute z-50 inset-0 flex flex-col gap-10 items-center justify-center container">
                 <Image width={500} height={500} src={'/img/logo.png'} className=" w-56 " alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
                 <h1 className=" text-white text-2xl md:text-5xl font-serif font-bold uppercase text-center">{'Domaine Zaytouna – L’Élégance et la Saveur au Cœur de Marrakech'}</h1>
-                <button className={`bg-primary hover:bg-white hover:text-primary duration-700 font-serif text-white font-medium text-3xl px-6 py-2`}>Réserver en ligne</button>
+                <Link href={'#Réserver'} className={`bg-primary hover:bg-white hover:text-primary duration-700 font-serif text-white font-medium text-3xl px-6 py-2`}>Réserver en ligne</Link>
               </div>
           </div>
           <div className=" flex flex-col lg:flex-row items-center justify-center gap-10   ">
@@ -46,7 +47,7 @@ export default function Home() {
                     {'Découvrez Domaine Zaytouna, un restaurant où authenticité et raffinement se rencontrent pour offrir une expérience gastronomique inoubliable. Niché dans un cadre enchanteur à Marrakech, notre établissement vous invite à savourer des mets d’exception préparés avec passion.'}
                     {'Que ce soit pour un dîner en amoureux, un repas entre amis ou une occasion spéciale, nous vous accueillons avec une cuisine riche en saveurs et un service impeccable.'}      
                   </p>
-                  <button className="w-fit border-4 border-primary bg-primary hover:bg-white hover:text-primary duration-700 font-serif text-white font-medium text-2xl px-6 py-2">Réserver en ligne</button>
+                  <Link href={'#Réserver'} className="w-fit border-4 border-primary bg-primary hover:bg-white hover:text-primary duration-700 font-serif text-white font-medium text-2xl px-6 py-2">Réserver en ligne</Link>
               </div>
           </div>
           <div className="py-20 ">
@@ -65,7 +66,7 @@ export default function Home() {
               {"Laissez-vous envoûter par l’élégance et l’authenticité de notre restaurant. Un lieu où chaque détail est pensé pour émerveiller vos sens."}
               </p>
           </div>
-          <div className="flex items-center justify-center  bg-white py-20">
+          <div id="Réserver" className="flex items-center justify-center  bg-white py-20">
             <ReservationForm />
           </div>
           <div>
