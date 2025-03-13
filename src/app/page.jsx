@@ -30,10 +30,10 @@ export default function Home() {
   return (
       <div>
           <div className=" relative">
-              <Image width={1920} height={1080} src={'/img/header.jpg'} className=" h-screen" alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
+              <Image width={1920} height={1080} quality={50} src={'/img/header.jpg'} className=" h-screen" alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
               <div className=" absolute inset-0 bg-black opacity-70 z-0"></div>
               <div className=" absolute z-50 inset-0 flex flex-col gap-10 items-center justify-center container">
-                <Image width={500} height={500} src={'/img/logo.png'} className=" w-56 " alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
+                <Image width={500} height={500} src={'/img/logo.png'} className=" w-56 " alt="Domaine Zaytouna" title="Domaine Zaytouna" quality={50}/>
                 <h1 className=" text-white text-2xl md:text-5xl font-serif font-bold uppercase text-center">{'Domaine Zaytouna – L’Élégance et la Saveur au Cœur de Marrakech'}</h1>
                 <Link href={'#Réserver'} className={`bg-primary hover:bg-white hover:text-primary duration-700 font-serif text-white font-medium text-3xl px-6 py-2`}>Réserver en ligne</Link>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
                   <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                       {zaytouna.map((ele, index) => (
                           <div key={index} className="relative flex-none w-fit pl-20 ">
-                              <Image width={500} height={500} quality={50} src={`/img/zaytouna/${ele.src}`} alt="Domaine Zaytouna" title="Domaine Zaytouna" className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
+                              <Image width={500} height={500} quality={30} src={`/img/zaytouna/${ele.src}`} alt="Domaine Zaytouna" title="Domaine Zaytouna" className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
                             
                           </div>
                       ))}
