@@ -6,5 +6,11 @@ const restaurant = [
     "restaurant_5.jpg",
     "restaurant_6.jpg",
     "restaurant_7.jpg",
+    "restaurant_8.jpg",
+    "restaurant_9.jpg",
+    "restaurant_10.jpg",
+    "restaurant_11.jpg",
+    "restaurant_12.jpg",
+    "restaurant_13.jpg",
   ];
   export default restaurant

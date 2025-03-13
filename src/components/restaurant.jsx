@@ -44,7 +44,7 @@ export default function Restaurant() {
                     <div key={index} ref={el => imageRefs.current[index] = el}>
                         <Image
                             className="rounded-2xl border-4 border-white  object-cover object-bottom"
-                            src={`/img/restaurant_1/${ele}`}
+                            src={`/img/restaurant/${ele}`}
                             width={1920}
                             height={1080}
                             alt="restaurant dazaytouna"
@@ -57,7 +57,7 @@ export default function Restaurant() {
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {restaurant.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50}  src={`/img/restaurant_1/${ele}`} alt="restaurant dazaytouna" title="restaurant dazaytouna"  className="rounded-2xl border-4 border-white w-full h-[20rem] object-cover "/>
+                            <Image width={1920} height={1080} quality={50}  src={`/img/restaurant/${ele}`} alt="restaurant dazaytouna" title="restaurant dazaytouna"  className="rounded-2xl border-4 border-white w-full h-[20rem] object-cover "/>
                            
                         </div>
                     ))}

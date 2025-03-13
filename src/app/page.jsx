@@ -52,26 +52,11 @@ export default function Home() {
                   <Link href={'#Réserver'} className="w-fit border-4 border-white bg-white hover:bg-primary hover:text-white duration-700 font-serif text-primary  font-medium text-2xl px-6 py-2">Réserver en ligne</Link>
               </div>
           </div>
-          <div className="py-20 bg-primary bg-[url(/img/bg.svg)] bg-contain  ">
-            <h2 className="text-2xl md:text-5xl text-center font-serif font-semibold mb-10 text-white container">Découvrez l’Univers du Restaurant Zaytouna</h2>
-            <div className="w-fit overflow-hidden  select-none cursor-grab active:cursor-grabbing " ref={emblaRef}>
-                  <div className="flex  w-fit transition-transform duration-700 ease-linear ">
-                      {zaytouna.map((ele, index) => (
-                          <div key={index} className="relative flex-none w-fit pl-20 ">
-                              <Image width={500} height={500} quality={30} src={`${ele.src}`} alt="restaurant dazaytouna" title="restaurant dazaytouna" className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
-                            
-                          </div>
-                      ))}
-                  </div>
-              </div>
-              <p className={`${montserratAlternates.className} text-white text-xs md:text-lg container text-center pt-10`}>
-              {"Laissez-vous envoûter par l’élégance et l’authenticité de notre restaurant. Un lieu où chaque détail est pensé pour émerveiller vos sens."}
-              </p>
-          </div>
+          <Restaurant/>
           <div id="Réserver" className="flex items-center justify-center  bg-white py-20">
             <ReservationForm />
           </div>
-          <Restaurant/>
+         
           <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.5620663698955!2d-7.9810365999999995!3d31.6294962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef60a21a0745%3A0x646a14ebf78b519f!2sDomaine%20zaytouna!5e1!3m2!1sen!2sma!4v1741818217924!5m2!1sen!2sma" frameBorder="0" className=" h-[70vh] w-full"/>
           </div>
