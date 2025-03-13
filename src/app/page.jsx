@@ -8,6 +8,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import zaytouna from "@/data/zaytouna";
 import ReservationForm from "@/components/ReservationForm";
 import Link from "next/link";
+import Footer from "@/components/footer/footer";
 
 const montserratAlternates = Montserrat_Alternates({
   subsets: ['latin'],
@@ -72,7 +73,7 @@ export default function Home() {
           <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.5620663698955!2d-7.9810365999999995!3d31.6294962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef60a21a0745%3A0x646a14ebf78b519f!2sDomaine%20zaytouna!5e1!3m2!1sen!2sma!4v1741818217924!5m2!1sen!2sma" frameborder="0" className=" h-[70vh] w-full"/>
           </div>
-          
+          <Footer/>
       </div>
   );
 }

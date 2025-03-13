@@ -40,7 +40,6 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={` antialiased`}>
         {children}
-        <Footer/>
       </body>
     </html>
   );
