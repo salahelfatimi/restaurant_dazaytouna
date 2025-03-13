@@ -30,7 +30,7 @@ export default function Home() {
   return (
       <div>
           <div className=" relative">
-              <Image width={1920} height={1080} quality={50} src={'/img/header.jpg'} className=" h-screen" alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
+              <Image width={1920} height={1080} quality={50} src={'/img/header.jpg'} className=" h-screen w-full object-cover" alt="Domaine Zaytouna" title="Domaine Zaytouna"/>
               <div className=" absolute inset-0 bg-black opacity-70 z-0"></div>
               <div className=" absolute z-50 inset-0 flex flex-col gap-10 items-center justify-center container">
                 <Image width={500} height={500} src={'/img/logo.png'} className=" w-56 " alt="Domaine Zaytouna" title="Domaine Zaytouna" quality={50}/>
