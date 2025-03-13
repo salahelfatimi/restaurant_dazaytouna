@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           <div className=" flex flex-col-reverse py-20 lg:py-0 lg:flex-row items-center justify-center gap-10 bg-primary bg-[url(/img/bg.svg)] bg-contain   ">
               <div className="lg:w-1/2 bg-primary items-center flex justify-center">
-                <Image width={500} height={500} src={'/img/restaurant/restaurant_6.jpg'} className=" w-full object-cover   " alt="restaurant dazaytouna" title="restaurant dazaytouna"/>
+                <Image width={1920} height={1080} src={'/img/restaurant/restaurant_6.jpg'} className=" w-full object-cover   " alt="restaurant dazaytouna" title="restaurant dazaytouna"/>
               </div>
               <div className=" lg:w-1/2 flex flex-col gap-4 px-10 container " >
                   <h1 className=" uppercase text-2xl lg:text-4xl font-serif font-bold text-white">Bienvenue au restaurant Zaytouna</h1>
